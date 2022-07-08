@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="header">
       <div class="container flex">
@@ -62,6 +63,34 @@
                   <use href="./images/icons/icons.svg#icon-close-btn"></use>
                 </svg>
               </button>
+              <form class="user-feedback-form">
+                <strong class="form-message">Оставьте свои данные, мы вам перезвоним</strong>
+                <div class="form-input">
+                  <label for="user-name" class="input-label" name="user-name">Имя</label>
+                  <input type="text" class="input-field" name="user-name" id="user-name" />
+                </div>
+                <div class="form-input">
+                  <label for="user-phone" class="input-label" name="user-phone">Телефон</label>
+                  <input type="phone" class="input-field" name="user-phone" id="user-phone" />
+                </div>
+                <div class="form-input">
+                  <label for="user-email" class="input-label" name="user-email">Почта</label>
+                  <input type="email" class="input-field" name="user-email" id="user-email" />
+                </div>
+                <div class="form-input">
+                  <label for="user-comment" class="input-label" name="user-comment">Комментарий</label>
+                  <textarea name="user-comment" id="user-comment" class="comment-field" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="user-agreement-check">
+                <input type="checkbox" id="user-agreement" />
+                <label for="user-agreement" class="user-agreement-txt"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="./index.html">Условия договора</a></label
+                >
+                </div>
+                <button type="submit" class="form-submit-btn">Отправить</button>
+                
+              </form>
             </div>
           </div>
         </div>
@@ -500,7 +529,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer-soc-block">
           <strong class="social-connect">Присоиденяйтесь</strong>
           <ul class="list flex">
             <li class="footer-social-list">
@@ -549,6 +578,18 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <strong class="social-connect">Подпишитесь на рассылку</strong>
+          <form class="email-input-form" name="singnup-form">
+            <input type="email" class="email-input" placeholder="E-mail" name="signup-email" />
+            <button type="submit" class="signup-btn">
+              <span>Подписаться</span>
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
