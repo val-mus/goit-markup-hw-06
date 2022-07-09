@@ -292,6 +292,7 @@ address {
     letter-spacing: inherit;
 }
 .form-input{
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -301,10 +302,12 @@ address {
     margin-bottom: 20px;
 }
 .input-label{
+    
     letter-spacing: 0.01em;
     margin-bottom: 4px;
 }
 .input-field {
+    
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 42px;
@@ -312,6 +315,14 @@ address {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    outline: transparent;
+}
+.form-icon{
+
+
+
+    fill: #000000;
 }
 .comment-field{
   
@@ -321,6 +332,8 @@ address {
     
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    outline: transparent;
 }
 .user-agreement-check{
     display: inline-flex;
@@ -355,6 +368,13 @@ address {
     border: none;
 
     cursor: pointer;
+
+    transition: background-color 250ms var(--transaction-time);
+}
+
+.form-submit-btn:hover, .form-submit-btn:focus {
+    background-color: #188CE8;
+       
 }
 
 .close-btn{
@@ -369,12 +389,18 @@ address {
     width: 30px;
     height: 30px;
 
+    color: #000000;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #fff;
 
     cursor: pointer;
 
+    transition: fill 250ms var(--transaction-time); 
+    
+}
+.close-btn:hover, .close-btn:focus {
+    fill: var(--focus-color);
 }
 
 /* why-section styles */
