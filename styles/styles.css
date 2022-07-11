@@ -292,7 +292,7 @@ address {
     letter-spacing: inherit;
 }
 .form-input{
-    position: relative;
+    
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -307,7 +307,7 @@ address {
     margin-bottom: 4px;
 }
 .input-field {
-    
+    width: 100%;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 42px;
@@ -317,13 +317,38 @@ address {
     border-radius: 4px;
 
     outline: transparent;
+
+    transition: border-color 250ms var(--transaction-time);
 }
+.input-string{
+    display: inline-block;
+    position: relative;
+    color: #000000;
+}
+.input-field:hover,
+.input-field:focus{
+    border-color: var(--focus-color);
+
+}
+
+.input-field:hover + .form-icon, .input-field:focus + .form-icon{
+   
+    color: var(--focus-color);
+}
+
+
 .form-icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
 
-
-
-    fill: #000000;
+    transition: color 250ms var(--transaction-time);
 }
+
+
+
 .comment-field{
   
     height: 120px;
@@ -481,6 +506,9 @@ address {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.employee-card:last-child{
+    margin-right: 0;
+}
 .sign{
    
     padding-top: 30px;
@@ -571,9 +599,14 @@ address {
     padding-bottom: 60px;
     background-color: var(--footer-bg-color);
 }
+
+   
 .footer .container{
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
+    
+    
 }
 .footer-line-item{
     margin-right: 70px; ;
@@ -644,9 +677,13 @@ address {
 .footer-contact:focus {
     color: var(--focus-color);
 }
+.footer-connect-block{
+    margin-right: 0;
+    width: 570px;
+}
 .email-input-form{
     display: inline-flex;
-
+   
 }
 .email-input{
     display: inline-flex;
@@ -671,6 +708,7 @@ address {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    margin-right: 0px;
 
     width: 200px;
     height: 50px;
