@@ -297,6 +297,8 @@ address {
     flex-direction: column;
     text-align: left;
     margin-bottom: 10px;
+
+    
 }
 .form-input:last-of-type {
     margin-bottom: 20px;
@@ -305,6 +307,8 @@ address {
     
     letter-spacing: 0.01em;
     margin-bottom: 4px;
+
+    cursor: pointer;
 }
 .input-field {
     width: 100%;
@@ -319,11 +323,16 @@ address {
     outline: transparent;
 
     transition: border-color 250ms var(--transaction-time);
+
+    cursor: pointer;
+
 }
 .input-string{
     display: inline-block;
     position: relative;
     color: #000000;
+
+    
 }
 .input-field:hover,
 .input-field:focus{
@@ -345,6 +354,8 @@ address {
     fill: currentColor;
 
     transition: color 250ms var(--transaction-time);
+
+    cursor: pointer;
 }
 
 
