@@ -103,13 +103,11 @@
                     placeholder="Введите текст"
                   ></textarea>
                 </div>
-                <div class="user-agreement-check">
-                  <input type="checkbox" id="user-agreement" />
-                  <label for="user-agreement" class="user-agreement-txt"
-                    >Соглашаюсь с рассылкой и принимаю
-                    <a href="./index.html">Условия договора</a></label
-                  >
-                </div>
+                <label class="user-agreement-txt">
+                  <input type="checkbox" class="checkbox visually-hidden" name="user-agreement-check" />
+                  <span class="checkbox-custom"></span>
+                  Соглашаюсь с рассылкой и принимаю <a href="./index.html">Условия договора</a>
+                </label>
                 <button type="submit" class="form-submit-btn">Отправить</button>
               </form>
             </div>

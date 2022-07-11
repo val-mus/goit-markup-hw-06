@@ -360,15 +360,35 @@ address {
 
     outline: transparent;
 }
-.user-agreement-check{
+
+.user-agreement-txt {
     display: inline-flex;
-    align-items: center;
-    margin-bottom: 30px;
-    gap: 7px;
-}
-.user-agreement-txt{
     line-height: 1.71;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    user-select: none;
+    margin-bottom: 30px;
 }
+.checkbox-custom{
+    width: 16px;
+    height: 15px;
+
+    background-image: url(/images/icons/custom-check-box-icons/icon-check-2.svg);
+}
+
+.checkbox:checked + .checkbox-custom{
+    border-color: var(--focus-color);
+    
+    background-image: url(/images/icons/custom-check-box-icons/icon-check-1.svg);
+   
+    background-size: contain;
+    background-origin: border-box;
+    border-radius: 2px;
+}
+  
+
+
 .form-submit-btn{
     display: flex;
     align-items: center;
