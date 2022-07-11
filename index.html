@@ -59,14 +59,14 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button data-modal-close type="button" class="close-btn">
-                <svg width="11" height="11">
+                <svg width="18" height="18">
                   <use href="./images/icons/icons.svg#icon-close-btn"></use>
                 </svg>
               </button>
               <form class="user-feedback-form">
                 <strong class="form-message">Оставьте свои данные, мы вам перезвоним</strong>
                 <div class="form-input">
-                  <label for="user-name" class="input-label" name="user-name">Имя</label>
+                  <label for="user-name" class="input-label">Имя</label>
                   <div class="input-string">
                     <input type="text" class="input-field" name="user-name" id="user-name" />
                     <svg class="form-icon" width="18" height="18">
@@ -75,16 +75,16 @@
                   </div>
                 </div>
                 <div class="form-input">
-                  <label for="user-phone" class="input-label" name="user-phone">Телефон</label>
+                  <label for="user-phone" class="input-label">Телефон</label>
                   <div class="input-string">
-                    <input type="phone" class="input-field" name="user-phone" id="user-phone" />
+                    <input type="tel" class="input-field" name="user-phone" id="user-phone" />
                     <svg class="form-icon" width="18" height="18">
                       <use href="./images/icons/icons.svg#icon-phone-black"></use>
                     </svg>
                   </div>
                 </div>
                 <div class="form-input">
-                  <label for="user-email" class="input-label" name="user-email">Почта</label>
+                  <label for="user-email" class="input-label">Почта</label>
                   <div class="input-string">
                     <input type="email" class="input-field" name="user-email" id="user-email" />
                     <svg class="form-icon" width="18" height="18">
@@ -93,9 +93,7 @@
                   </div>
                 </div>
                 <div class="form-input">
-                  <label for="user-comment" class="input-label" name="user-comment"
-                    >Комментарий</label
-                  >
+                  <label for="user-comment" class="input-label">Комментарий</label>
                   <textarea
                     name="user-comment"
                     id="user-comment"
@@ -104,7 +102,11 @@
                   ></textarea>
                 </div>
                 <label class="user-agreement-txt">
-                  <input type="checkbox" class="checkbox visually-hidden" name="user-agreement-check" />
+                  <input
+                    type="checkbox"
+                    class="checkbox visually-hidden"
+                    name="user-agreement-check"
+                  />
                   <span class="checkbox-custom"></span>
                   Соглашаюсь с рассылкой и принимаю <a href="./index.html">Условия договора</a>
                 </label>
