@@ -304,7 +304,7 @@ address {
     margin-bottom: 20px;
 }
 .input-label{
-    
+    font-size: 12px;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
 
@@ -371,6 +371,10 @@ address {
 
     outline: transparent;
 }
+.comment-field:hover,
+.comment-field:focus{
+    border-color: var(--focus-color);
+}
 
 .user-agreement-txt {
     display: inline-flex;
@@ -396,6 +400,9 @@ address {
     background-size: contain;
     background-origin: border-box;
     border-radius: 2px;
+}
+.agreement-cond{
+    color: var(--focus-color);
 }
   
 
@@ -639,7 +646,7 @@ address {
 .footer .container{
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    
     
     
 }
@@ -659,7 +666,7 @@ address {
     margin-bottom: 9px;
 }
 .footer-soc-block{
-    margin-right: 93px;
+    margin-right: auto;
 }
 .social-connect{
     display: inline-block;
